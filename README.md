@@ -1,1 +1,3 @@
 # linux-device-drivers
+
+[Task-display](misc-char-task-display) - It is a minimal character device driver that exposes process information. Writing a PID to /dev/task_display causes the kernel to locate the corresponding task_struct; reading from the device prints selected task details to the kernel log. The driver is intended purely as an educational example of user–kernel communication, PID lookup, and basic task structure access — not as a production debug interface.
