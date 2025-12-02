@@ -67,6 +67,7 @@ ssize_t read_tsk_display(struct file *filp,
         if (IS_ERR(task))
         {
             ret = PTR_ERR(task);
+            goto out_mem;
         }
     }
 
